@@ -93,7 +93,12 @@ deerResume.controller("adminCtrl", function ($scope, $http, storage, ngNotify) {
 
 // ============
 function makepdf() {
-  //post('http://pdf.ftqq.com',{'title':$('#drtitle').html(),'subtitle':$('#drsubtitle').html(),'content':$('#cvcontent').html(),'pdfkey':'jobdeersocool'});
+  // post("https://pdf.ftqq.com", {
+  //   title: $("#drtitle").html(),
+  //   subtitle: $("#drsubtitle").html(),
+  //   content: $("#cvcontent").html(),
+  //   pdfkey: "jobdeersocool",
+  // })
   $("#hform [name=title]").val($("#drtitle").html())
   $("#hform [name=subtitle]").val($("#drsubtitle").html())
   $("#hform [name=content]").val($("#cvcontent").html())
